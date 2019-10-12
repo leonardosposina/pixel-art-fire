@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+body {
+  background-image: linear-gradient(black, #2C3539);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  font-family: 'Press Start 2P', Arial, Helvetica, sans-serif;
+  color: gray;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container h1 {
+  background: -webkit-linear-gradient(gray, lightgray, darkgray, orangered);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container h3 {
+  background: -webkit-linear-gradient(lightgray, darkgray, orangered);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container canvas {
+  width: 1120px;
+  height: 600px;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.controls {
+  background: -webkit-linear-gradient(orange,  lightgray, darkgray);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 18px;
+
+  display: flex;
+  align-items: center;
+}
+
+.controls #fire-source {
+  -ms-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.controls #fire-intensity {
+  direction: rtl;
+}
+
+.controls input + label::before {
+  content: '|';
+  margin: 0 20px;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Pixel Art Fire :: HTML5 Canvas + JavaScript</title>
+    <meta name="description" content="Pixel Art Fire - HTML5 Canvas + JavaScript">
+    <meta name="author" content="Leonardo Sposina">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Pixel Art Fire</h1>
+      <h3>HTML5 Canvas + JavaScript</h3>
+      <canvas id="fire-canvas" width="168" height="90">Your browser does not support canvas tag!</canvas><br>
+      <div class="controls">
+        <label for="fire-source">Fire:</label>
+        <input type="checkbox" id="fire-source" checked>
+        <label for="fire-intensity">Intensity:</label>
+        <input type="range" id="fire-intensity" min="2" max="6" value="2">
+      </div>
+    </div>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
