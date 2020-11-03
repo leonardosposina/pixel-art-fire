@@ -28,11 +28,11 @@ export default class FireGrid {
     }
   }
 
-  hasFireSource(ignited = true) {
+  hasFireSource(isIgnited = true) {
     const firstPixelOfLastLineIndex = this.lastPixelIndex - this.width + 1;
 
     for (let i = this.lastPixelIndex; i >= firstPixelOfLastLineIndex; i--) {
-      const colorIndex = (ignited) ? FIRE.BURNING : FIRE.NOT_BURNING;
+      const colorIndex = (isIgnited) ? FIRE.BURNING : FIRE.NOT_BURNING;
 
       this.#grid[i].updateColorIndex(colorIndex);
     }
